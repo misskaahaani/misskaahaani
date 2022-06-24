@@ -1,0 +1,1611 @@
+
+<!------ 
+ 
+tags page by taezs.tumblr.com, please do not remove credit.
+ 
+message me on creatre if you have any issues!
+ 
+------>
+ 
+<!DOCTYPE html>
+<head>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+<title>{Name}: Navigation</title>
+
+
+<!---- icons by suiomi & linearicons ---->
+<link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;600&family=Montserrat:wght@200;400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+<!--CSS customization here. -->
+
+<style type="text/css">
+
+/*
+
+In order to match the fansite main page, go to the source code (right click or CTRL+U on chrome) and copy the section of colour variables so you can see what each accent colour corresponds to.
+
+Paste it in here (where it's grey, after this bit) and use find and replace to replace each color. I recommend doing the colours first (where you can just find & replace all) and then black and white last (especially if you're going from this light version to a dark version, updating preview in between each change to make sure you're not mixing them up.
+
+// default variables:
+
+<meta name="color:Background" content="#ffffff"/>
+<meta name="color:Posts" content="#f8f8f8"/>
+<meta name="color:Text" content="#000000"/>
+<meta name="color:Link" content="#494949"/>
+<meta name="color:Link Hover" content="#c3a690"/>
+<meta name="color:Top Text" content="#000000"/>
+<meta name="color:Top Bar" content="#f3e3d1"/>
+<meta name="color:Header Title"content="#ffffff"/>
+<meta name="color:Header Links"content="#ffffff"/>
+<meta name="color:Header Background" content="#f3e3d1"/>
+<meta name="color:Header Overlay" content="#ffffff"/>
+<meta name="color:Secondary Text" content="#898786"/>
+<meta name="color:Borders" content="#bba898"/>
+<meta name="color:Accent" content="#e7dbce"/>
+<meta name="color:Accent 2" content="#eeeeee"/>
+<meta name="color:Sidebar Titles" content="#000000"/>
+<meta name="color:Text Over Accent" content="#000000"/>
+
+
+// insert your default variables here:
+
+
+
+*/
+
+/* 
+
+header styling 
+
+tip: go to the source code of your main fansite and copy this whole thing below to transfer across all of your styling for the header including the overlay. this page will not have subtitles on the header, and I also recommend a shorter header - change the height to 200px or 100px - whatever you want. If you don't want a header, change the height to 0px. 
+
+*/
+
+header{
+    position:relative;
+    top:100px;
+    height:200px;
+    /* change the height here. if you don't want a header, change this to 0px */
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    background:rgba(104,104,104, 30%);
+    border-radius:3px;
+    overflow:hidden;
+    color:#ffffff;
+    background-color:#006D77;
+    background-image:url('https://kpopping.com/uploads/documents/4c/4/optimize_-_2020-05-26T143618041.jpeg'); 
+    background-repeat:no-repeat; 
+    background-position:0 -180px ;
+    background-size:cover;
+}
+
+
+
+
+/* controls & body */
+
+#s-m-t-tooltip {
+    max-width:300px;
+    margin:10px 10px;  
+    z-index:99999;
+    color:#000000;
+    background:#006D77;
+    padding:4px 7px;
+    line-height:1.2;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:3px;
+}
+
+ 
+.iframe-controls--desktop {
+   position:fixed;
+   top:0px;
+   right:0px;
+   z-index:999999999999;
+   filter:invert(100%);
+   -webkit-filter:invert(100%);  
+   -webkit-transform:scale(0.6,0.6);
+   -webkit-transform-origin: 100% 0%;
+   -ms-transform-origin:100% 0%;
+   -ms-transform:scale(0.6,0.6);
+   transform:scale(0.6,0.6);
+   transform-origin:100% 0%;
+}
+
+body {
+    background:#ffffff;
+    line-height:200%;
+    margin:0;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    color:#000000;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.65em;
+    letter-spacing:0.5px;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+}
+
+a {
+    color:#494949;
+    text-decoration:none;
+    transition:all .3s linear;    
+    -webkit-transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;      
+}
+ 
+a, a img {cursor:pointer;}
+ 
+a:hover {
+    color:#006D77;
+    text-decoration:none;
+    transition:all .3s linear;    
+    -webkit-transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;  
+}
+ 
+img {
+    opacity:1;
+    border:0;
+    text-decoration:none;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+ 
+blockquote {
+    padding:.25em 0 .25em 15px;
+    margin:.5em 1em;
+    border-left:3px solid #EBEBF6;
+}
+ 
+pre {
+    padding:0;
+    margin:0;
+    line-height:inherit!important;
+    background:transparent;
+    font-family:inherit!Important;
+    font-size:inherit!important;
+    white-space:pre-wrap;
+    white-space:-moz-pre-wrap;
+    white-space:-pre-wrap;
+    white-space:-o-pre-wrap;
+    word-wrap:break-word;
+}
+ 
+p {margin:1em 0;}
+ 
+p:first-of-type {margin-top:0;}
+ 
+p:last-of-type {margin-bottom:0;}
+ 
+b, strong, b a, strong a {
+    font-weight:bold!important;
+    color:#000000;
+}
+
+small, big, sub, pre {
+    font-size:1em!important;
+    line-height:1.4em!important;
+    vertical-align:baseline!important;
+}
+ 
+h1, h2, h3, h4 {
+    margin:1.5em 0;
+    font-size:1.5em;
+    padding:0;
+    color:#000000;
+    font-weight:bold;
+}
+ 
+hr {
+    border:none;
+    box-shadow:0;
+    margin:2em auto;
+    width:75px;
+    border-top:1px solid #EBEBF6;
+}
+
+::-webkit-scrollbar{height:6px;width:6px;background:inherit;}
+::-webkit-scrollbar-thumb {background:#006D77;}
+::-webkit-scrollbar-track {background:#ffffff;}
+.mp_admins .desc::-webkit-scrollbar-track {background:#f8f8f8;}
+.mp_admins .desc::-webkit-scrollbar-thumb{background:#006D77;}
+.mp_admins .desc::-webkit-scrollbar{height:4px;width:4px;background:inherit;}
+
+::selection {background:#333; color:#ffffff;}
+
+/* credit, please do not remove */
+
+.taezs, #button{
+    position:fixed;
+    bottom:38px;
+    z-index:300;
+    width:200px;
+    height:20px;
+    transition:0.3s ease-in-out;
+}
+
+.taezs a, #button{
+    display:inline-block;
+    background:#006D77;
+    border-radius:3px;
+    color:#000000;
+    position:fixed;
+    right:30px;
+    text-align:center;
+    width:20px;
+    padding:5px;
+    font-size:10px;
+    transition:0.3s ease-in-out;
+}
+ 
+.taezs a:before, #button:before{
+    content:"theme by taezs";
+    position:fixed;
+    right:80px;
+    opacity:0;
+    margin-top:-5px;
+    font-size:0.9em;
+    width:80px;
+    line-height:20px;
+    padding:5px 10px;
+    font-family:'montserrat alternates', sans-serif;
+    font-weight:bold;
+    text-align:center;
+    background:#006D77;
+    border-radius:3px;
+    color:#E29578;
+    transition:0.3s ease-in-out;
+}
+
+.taezs a:hover, a#button:hover{
+    background:#f8f8f8;
+    color:#000000;
+    transition:0.3s ease-in-out;
+}
+
+.taezs a:hover:before, #button:hover::before{
+    opacity:1;
+    right:70px;
+    transition:0.3s ease-in-out;
+}
+
+#button {
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    bottom:65px;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+  content: "\e873";
+  font-family: 'linearicons-free';
+  font-weight: normal;
+  font-style: normal;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+
+#button:before {
+  content:'scroll to top';
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/*header*/
+
+#topbar{
+    position:fixed;
+    top:30px;
+    height:40px;
+    line-height:40px;
+    background:#ffffff;
+    border-bottom:1px solid #006D77;
+    z-index:10;
+    width: 100vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#tit{
+
+    margin:0;
+
+    font-weight:600;
+    color:#000000;
+    font-size:15px;
+    height:40px;
+    font-weight:600;
+    line-height:40px;
+    line-height:40px;
+}
+
+#top{
+ 
+    height:40px;
+    text-transform:lowercase;
+    line-height:40px;
+    text-align: center;
+    font-weight:600;
+    color:#000000;
+    background-color: white;
+    width: 100%;
+ 
+}
+
+#top a{
+    display:inline-block;
+    padding:0 20px;
+    position:relative;
+    font-size:11px;
+    color:#000000;
+}
+
+#top a:after{
+    content:'';
+    height:5px;
+    width:5px;
+    margin-left:20px;
+    top:50%;
+    margin-top:-2.5px;
+    border-radius:50%;
+    background:#006D77;
+    position:absolute;
+}
+
+#top a:last-child{
+    padding-right:0;
+}
+
+#top a:last-child:after{
+    display:none;
+}
+
+
+#top a:hover{
+    color:#006D77;
+    border-color:#006D77;
+}
+
+#top span{
+    font-size:10px;
+    padding-right:4px;
+    margin-top:-3px;
+    display:none;
+}
+
+#top:before{
+    position:fixed;
+    width:100%;
+    left:0px;top:0px;
+    height:30px;
+    background:#83C5BE;
+    content:'';
+    font-family: 'Montserrat', sans-serif;
+    font-weight:200;
+}
+
+.sub{
+    font-size:35px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight:600;
+    margin: 0;
+    margin-top: 5rem;
+    color:#ffffff;
+    
+   
+}
+
+
+/* sidebar */
+
+#right{
+    position:absolute;
+    width:245px;
+    left:50%;
+    margin-top:25px;
+    margin-left:-570px;
+    padding:0 20px;
+    padding-bottom:100px;
+    border-radius:3px;
+    transition:0.5s;
+}
+
+#right{
+    margin-left:285px;
+    
+}
+
+.inform .counter span{
+    padding:0;
+    display:inline-block;
+}
+
+.inform a, .desc a, .comment a{
+    display:inline-block;
+    line-height:140%;
+    border-bottom:1px dotted #494949;
+}
+
+.inform a:hover, .desc a:hover, .comment a:hover{
+    border-color:#FFDDD2;
+}
+
+.head{
+    margin:0px;
+    padding:0px;
+    font-size:15px;
+    position:relative;
+    margin-bottom:10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-bottom:10px;
+    border-bottom:1px solid #bba898;
+    font-weight:400;
+    line-height:100%;
+    font-size:11px;
+    color:#000000;
+}
+
+.head:after{
+    position:absolute;
+    right:0;
+    content:'\e814';
+    color:#000000;
+    font-family:'linearicons-free';
+    font-style:normal;
+}
+
+.ad:after{content:'\e82a';}
+.sch:after{content:'\e836';}
+.so:after{content:'\e83d';}
+.pr:after{content:'\e859';}
+.ql:after{content:'\e871';}
+.ab:after{content:'\e843';}
+.af:after{content:'\e82b';}
+.se:after{content:'\e86f';}
+
+#left ul, #right ul{
+    list-style-type:none; 
+    padding:0px;
+    margin:0px;
+    margin-top:-10px;
+}
+
+#left ul, #left li, #right li, #right ul{
+    display:block;
+    background:#ffffff;
+    padding:0;
+    margin:5px 0;
+}
+
+#left li, #right li{
+    margin-bottom:35px;
+    background:#ffffff;
+    border-radius:3px;
+    
+    background:#f8f8f8;
+    padding:20px;
+    
+}
+
+#left li.sbpic, #right li.sbpic{
+    padding:0px;
+}
+
+.admins a{
+    display:block;
+    height:34px;
+    overflow:hidden;
+    margin-bottom:5px;
+}
+
+.admins img{
+    height:32px;
+    float:left;
+    position:relative;
+    width:32px;
+    margin-right:10px;
+    overflow:hidden;
+    border-radius:3px;
+    object-fit:cover;
+    object-position:top;
+}
+
+.admins h3:after{
+    width:32px;
+    left:40px;
+    content:'';
+    position:absolute;
+    height:32px;
+    border-radius:3px;
+    transition:0.5s;
+    background:#000000;
+    opacity:0;
+    
+}
+
+.admins a:hover h3:after{
+    opacity:0.5;
+    transition:0.5s;
+}
+
+.admins h3{
+    margin:0;
+    padding:0;
+    line-height:32px;
+    font-size:0.95em;
+    transition:0.5s;
+}
+
+.admins a:hover h3{
+    color:#FFDDD2;}
+
+
+
+.admins i{
+    font-style:normal;
+    font-size:0.9em;
+}
+
+.socials a{
+    display:block;
+    padding:5px 0;
+    border:none;
+}
+
+.socials span.th{
+    display:inline-block;
+    text-align:center;
+    border-radius:3px;
+    padding:5px 10px;
+    margin-right:10px;
+    background:#006D77;
+    color:#000000;
+    transition:0.5s;
+}
+
+.socials a:hover span.th{
+    background:#000000;
+    color:#006D77;
+    transition:0.5s;
+}
+
+
+.inform b{font-family: 'Montserrat Alternates', sans-serif;}
+
+.inform span{
+    display:block;
+    padding:4px;
+    padding-left:0;
+    border-bottom:1px solid #eeeeee;
+}
+
+.inform .counter span{
+    display:inline-block;
+}
+.inform.ab b{
+    display:inline-block;
+    padding:3px 5px;
+    background:#fafafa;
+}
+
+.inform span:last-child{
+    border:none;
+}
+
+
+
+.sbpic img{
+    width:100%;
+    border-radius:3px;
+}
+
+.qlinks{
+    margin-bottom:-10px;
+}
+
+.qlinks a{
+    display:block;
+    padding:6px;
+    font-size:11px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom:1px solid #eeeeee;
+    padding-left:0;
+    color:;
+}
+
+.qlinks a:last-child{
+    border:none;
+}
+
+.qlinks a:after{
+    position:absolute;
+    display:inline-block;
+    content:'\e876';
+    font-family:'linearicons-free';
+    line-height:200%;
+    margin-top:3px;
+    font-size:8px;
+    padding-left:20px;
+    font-style:normal;  
+    transition:.5s;
+}
+
+.qlinks a:hover:after{
+    padding-left:30px;
+    color:;
+    opacity:1;
+}
+
+.searchb input {
+    background-color:#006D77; 
+    font-size: 1em; 
+    border: 0px; 
+    border-radius:3px;
+    line-height:200%;
+    width:calc(100% - 16px);
+    margin-top: 0px; 
+    color: #000000;  
+    letter-spacing:0.5px;
+    font-family:'montserrat', sans-serif;
+    padding: 4px 8px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000000;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000000;
+}
+
+.aff{
+    text-align:center;
+}
+
+.aff_img img{
+    object-fit:cover;
+    object-position:top;
+    height:52px;
+    margin-bottom:-15px;
+    width:52px;
+    border-radius:3px;
+    display:inline-block;
+}
+
+.aff_img{
+    position:relative;
+    background:none;
+}
+
+.aff td.aff_img:hover, .aff td.aff_img{
+    background:#f8f8f8;
+}
+
+.sch_item{
+    display:block;
+    margin-bottom:8px;
+    height:40px;
+    line-height:1;
+}
+
+.sch_thing{
+    display:inline-block;
+    font-size:10px;
+    text-transform:uppercase;
+    float:left;
+    margin-right:10px;
+    height:40px;
+    border-radius:3px;
+    background:#006D77;
+    color:#000000;
+    padding:10px;
+    width:40px;
+}
+
+.sch_thing b{
+    display:block;
+    font-size:16px;
+    color:#000000;
+    letter-spacing:1px;
+}
+
+.sch_event{
+    display:block;
+    padding:10px;
+    padding-left:20px;
+}
+
+table{
+    width:100%;
+}
+
+tr{
+    border-bottom:6px solid #ffffff;
+    
+    border-color:#f8f8f8;
+    
+}
+
+td{
+    padding:3px;
+    line-height:150%;
+}
+
+td:first-child, .aff td, .project td{
+    background:#006D77;
+    width:40px;
+    line-height:200%;
+    padding:10px 3px;
+    margin-left:-10px;
+    color:#000000;
+    border-radius:5px;
+    border:2px solid #ffffff;
+    
+    border-color:#f8f8f8;
+    
+    text-align:center;
+}
+
+td:first-child a, .aff td a, .project td a{
+    color:#000000;
+}
+
+.sched td:nth-of-type(2){
+    padding-left:10px;
+}
+
+.aff td.aff_img{
+    padding:0;
+    height:40px;
+    overflow:hidden;
+}
+
+.aff td, .project td{
+    font-weight:600;
+    text-transform:uppercase;
+    transition:0.5s;
+}
+
+#left li.projects, #right li.projects{
+    padding-bottom:1px;
+}
+.project table{
+    width:calc(100% + 10px);
+    margin-left:-5px;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+
+.project td{
+    padding:5px 3px;
+    font-size:0.8em;
+}
+
+.aff td:hover, .project td:hover{
+    background:#000000;
+    color:#006D77;
+    transition:0.5s;
+}
+
+.aff td:hover a, .project td:hover a{
+   color:#006D77; 
+}
+
+.aff .lnr{
+    font-size:120%;
+    display:inline-block;
+    transform:translateY(1px);
+}
+
+td:first-child b{
+    display:block;
+    color:#000000;
+    font-size:15px;
+    margin-bottom:-5px;
+    font-weight:lighter;
+}
+
+
+.project span{
+    display:block;
+    margin:5px 0;
+    text-align:center;
+    font-weight:600;
+    padding:3px 5px;
+    border-radius:3px;
+    background:#006D77;
+    color:#000000;
+}
+
+.project span a{
+    border:none;
+    display:inline;
+}
+
+.project span.type{
+    background:#eeeeee;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:0.8em;
+}
+
+.project img{
+    height:150px;
+    width:100%;
+    object-fit:cover;
+    margin-bottom:7px;
+    border-radius:3px;
+}
+
+
+/* container */
+
+section {
+    position:relative;
+    margin-top:130px;
+    margin-bottom:200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.posts {
+    text-align: center;
+    width:80%;
+    background:#f8f8f8;
+    margin-top:30px;
+    border-radius:3px;
+    margin-bottom:0px;
+    padding:20px;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    width:1100px;
+    left:50%;
+    margin-left:-550px;
+    z-index:100;
+    line-height:200%;
+    background:#ffffff;
+    border-top:1px solid #006D77;
+    color:#000000;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+}
+
+footer span{
+    display:inline-block;
+    padding:10px;
+    position:relative;
+    font-size:11px;
+    color:#000000;
+}
+
+
+footer span:after{
+    content:'';
+    height:5px;
+    width:5px;
+    margin-left:10px;
+    top:50%;
+    margin-top:-2.5px;
+    border-radius:50%;
+    background:#006D77;
+    position:absolute;
+}
+
+footer span:last-child{
+    padding-right:0;
+}
+
+footer span:last-child:after{
+    display:none;
+}
+
+
+/* nav page */
+
+h2{
+    display:block;
+    width:calc(100% - 20px);
+    text-align:center;
+    position:relative;
+    padding:10px;
+    margin-top:0;
+    font-weight:400;
+    margin-bottom:10px;
+    border-bottom:1px solid #006D77;
+    color:#006D77;
+    color:black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size:1.9em;
+}
+
+h2.aa:after{content:'\e815';}
+h2.bb:after{content:'\e871';}
+
+h2:after{
+    content:'\e834';
+    position:absolute;
+    right:10px;
+    font-size:16px;
+    line-height:20px;
+    font-family:'linearicons-free';
+}
+
+.tags a, .list{
+    display:inline-block;
+    padding:6px 10px;
+    font-size:11px;
+    background:#fff;
+    border-radius:3px;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    position:relative;
+    width:231px;
+    margin:3px;
+    cursor:pointer;
+}
+
+.tags a:after, .list span:after{
+    position:absolute;
+    line-height:15px;
+    right:25px;
+    width:5px;
+    top:10px;
+    transition:.6s;
+    opacity:0;
+    font-size:0.8em;
+    content: '\ebc6'; 
+    font-family:'honeybee';
+}
+
+.list span:after{
+    opacity:1;
+    content:'\e941';
+}
+
+.tags a:hover, .list:hover{
+    color:black;
+    background:#83C5BE;
+}
+
+.tags a:hover:after, .list:hover span:after{
+    opacitY:1;
+    transition:0.6s;
+    right:15px;
+}
+
+.list:hover span:after{
+    content:'\ebc6';
+}
+
+.list:hover span{
+    margin-left:10px;
+    transition:0.5s;
+}
+
+.list span{
+    transition:0.5s;
+}
+
+
+.in{
+    position:absolute;
+    width:0px;
+    left:100%;
+    top:0px;
+    box-shadow: 5px 5px 10px #ffffff;
+    height:auto;
+    border-radius:0px 3px 3px 3px;
+    z-index:100;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.in a{
+    border:none;
+    border-radius:0;
+    margin:0;
+    padding:6.5px;
+    padding-left:10px;
+    background:#83C5BE;
+    display:block;
+    width:90%;
+    overflow:hidden;
+}
+
+.list:hover .in{
+    width:200px;
+    transition:0.5s;
+}
+
+.in a:hover:after{
+    right:30px;
+}
+
+.in a:hover{
+    background:#333333;
+    color:white;
+}
+
+.in a:after{
+    right:35px;
+    color:white;
+}
+
+.tags{
+    width:100%;
+    text-transform:lowercase;    
+    position:relative;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!------ begin footer --------->
+
+<footer>
+<span>{Name}</span>
+<span>{CopyrightYears}</span>
+<span>Powered by Tumblr.</span>
+</footer>
+<!------ end footer --------->
+
+<!------ 
+
+begin top links 
+
+change the links here. 
+
+tip: if you go to the fansite and view page source (CTRL+U on chrome and CTRL+F for "topbar"), you can copy this whole thing across instead of typing all of the links out.
+
+--------->
+<div id="topbar">
+    <div id="tit">{Name}</div>
+    <div id="top">
+        <a href="https://kaahaani.tumblr.com">Tumblr</a>
+        <a href="https://twitter.com/misskaahaani">Twitter</a>
+        <a href="https://curiouscat.qa/misskaahaani">CuriousCat</a>
+        <a href="/ask">Ask a Question</a>
+        <a href="https://taezs.tumblr.com">Theme</a>
+</div></div>
+<!------ end top links --------->
+
+
+<!------ 
+
+begin header
+
+tip: if you do not want a header, DONT REMOVE IT HERE. go to the top where header{ is, and change the HEIGHT to OPX.
+
+--------->
+
+<header>
+    <div class="sub">kaahaani's writing index</div>
+</header>
+
+<!------ end header  --------->
+
+
+<!------ 
+
+
+begin sidebar
+
+tip: copy across any sidebar boxes you would like from your main site and they will work here too. 
+
+just make sure you leave <ul> and </ul> in tact.
+
+
+--------->
+
+<!------ end sidebar --------->
+
+
+
+
+<section id="entries">
+<!------ begin content --------->
+
+
+<!------ begin tags section --------->
+
+<article class="posts">
+<div class="tags">
+<h2 class="aa">tkem canon continuation</h2>
+
+
+<!--- BEGIN DROP DOWN LIST --->
+   <div class="list"><span>Happily Ever After Series</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/series/1839718">The Happily Ever After Series follows Lee Gon and Tae-Eul post the end of TKEM as they accept fate and start their lives together.</a>
+        <a href="https://archiveofourown.org/series/1839718">Read Here</a>
+    </div></div> 
+    
+ <div class="list"><span>To Say That</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25093984">To Say That [TST] is a series of non-sequential one-shots that follow Lee Gon and Jeong Tae-Eul as they move through different stages of life, from dating to marriage to parenthood.</a>
+        <a href="https://archiveofourown.org/works/25093984">Read Here</a>
+    </div></div>
+     
+    <div class="list"><span>never again</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25114099"> [Status: Complete] Being the Queen of the Kingdom of Corea meant that there was a lack of freedom to just get up and go wherever, whenever. A freedom which Jeong Tae-Eul misses greatly so she takes a chance but expects neither the consequences nor her husband's anger.</a>
+            <a href="https://archiveofourown.org/works/25114099">read here</a>
+    </div></div>
+     <div class="list"><span>the bet</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25223917"> [Status: Complete] It all started when Jeong Tae-Eul blamed Lee Gon when they were caught in a compromising position, it leads to a bet to see who cracks first to determine who has trouble keeping their hands off of who – too bad they know exactly what makes the other tick.</a>
+            <a href="https://archiveofourown.org/works/25223917">read here</a>
+    </div></div>
+     <div class="list"><span>the pregnancy chronicles</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25312642"> [Status: Complete] The day Jeong Tae-Eul found our she was pregnant was an eventful one. It involved a massive tabloid storm, one of her best friends was left mortified and angry while the other suffered a concussion. Her husband however looked almost deranged and had a huge smile on his face despite all of that.</a>
+            <a href="https://archiveofourown.org/works/25312642">read here</a>
+    </div></div>
+     <div class="list"><span>a series of wicked events (asowe)</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796">A collection of unrelated smut one-shots featuring Lee Gon and Jeong Tae Eul. As such, they will not be sequential and can be read alone. Canon-Compliant/Canon-Continuation.</a>
+        <a href="https://archiveofourown.org/works/25737796">read here</a>
+    </div></div>
+    <div class="list"><span>to neigh that (one shot)</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25715626"> [Status: Complete] Maximus, the King's Horse, weighs in on the progression of the relationship between her owner and his new female friend.</a>
+        <a href="https://archiveofourown.org/works/25715626">read here</a>
+    </div></div>
+    <div class="list"><span>KUWTCRF - Keeping Up With The Corean Royal Family</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/34729309"> [Status: In Progress] Canon Continuation. Follows 'the pregnancy chronicles'. Summary: To their twins, Lee In-Na and Lee Dae-Hyun, Gon and Tae-Eul are appa and eomma, not the King and Queen of the Kingdom of Corea. The Corean Royal Family is just a regular family when it comes down to it - of course there are tabloid storms to weather, important issues to tackle, and a whole lot of paperwork. But in between it all, Gon and Tae-Eul find every opportunity possible to cuddle with and play with their twins. Their favourite sentence seems to be 'they're growing up way too fast'. </a>
+        <a href="https://archiveofourown.org/works/34729309">read here</a>
+    </div></div>
+    <div class="list"><span>corean royal family edit</span>
+        <div class="in">
+            <a href="https://kaahaani.tumblr.com/tagged/crfedit">A magazine edit that introduces the whole Corean Family, from Gon and Tae-Eul's marriage to their kids. Canon Continuation.</a>
+        <a href="https://kaahaani.tumblr.com/tagged/crfedit">see here</a>
+    </div></div>
+        <div class="list"><span>corean royal family tweet series</span>
+        <div class="in">
+            <a href="https://twitter.com/i/events/1345810476693909507">A series of short conversations between the Corean Royal Family (Gon, Tae-Eul, their three children), and friends.</a>
+        <a href="https://twitter.com/i/events/1345810476693909507">read here</a>
+        
+      
+    </div></div>
+<!--- END DROP DOWN LIST --->
+ </div></div>
+<!--- BEGIN DROP DOWN LIST --->
+
+<article class="posts">
+<div class="tags">
+<h2 class="aa">tkem/mineun alternate universe long fics</h2>
+    <div class="list"><span>Marked: Searching for Gold</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/26399245">[status: complete] Lee Gon x Jeong Tae-Eul. Tae-Eul was born with a soulmate mark different than any other, it was a deep gold that almost glowed. She didn't quite know what it meant, or if her soulmate existed at all.</a>
+        <a href="https://archiveofourown.org/works/26399245">Read Here</a>
+    </div></div>
+    
+    <div class="list"><span>A Clean Slate</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/27887011"> [status: complete] Original Characters (William Choi (lmh) x Taera Jeong (KGE). Fed up of her life in New York, Taera moves down the east coast with her best friend, Jiah. Sparks fly for all the wrong reasons when they meet the Choi Brothers - William and Daniel.</a>
+        <a href="https://kaahaani.tumblr.com/tagged/a-clean-slate">Character Sketches</a>
+        <a href="https://twitter.com/i/events/1425558785624576000">A Clean Slate Art (by Jos)</a>
+        <a href="https://archiveofourown.org/works/27887011">Read Here</a>
+    </div></div>
+    
+<div class="list"><span>Give Me A Reason</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/28372275">[Status: complete] Original Characters (William Choi (LMH) x Taera Jeong (KGE). William  & Taera are heirs to two competing conglomerates - their fathers hate each other. But that doesn’t stop them from meeting in dark clubs on a weekly basis to engage in scandalous activities.</a>
+            <a href="https://archiveofourown.org/works/28372275">Read Here</a>
+    </div></div>
+    
+<div class="list"><span>Not His Type</span>
+<div class="in">
+        <a href="https://archiveofourown.org/works/29792934">[Status: Complete] Original Characters (Liam Lee (LMH) x Mina Jeong (KGE). Maybe every version of Lee Gon and Jeong Tae-Eul don't belong together. And in one world Mina Jeong loves Liam Lee but she's just not his type.</a>
+        <a href="https://twitter.com/misskaahaani/status/1371466385877045249">Accompanying Art (Jos)</a>
+        <a href="https://twitter.com/misskaahaani/status/1372885579654909962">Video Edit 1 (Fran)</a>
+        <a href="https://twitter.com/jollyponglatte/status/1373513150943793152?s=20">Video Edit 2 (Fran)</a>
+        <a href="https://archiveofourown.org/works/29792934">Read Here</a>
+    </div></div>
+   <div class="list"><span>The Architect and Corporate Golden Girl [taacgg]</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/35000314">[Status: Complete] Original Characters (Lee Ro-Woon (LMH) x Jeong Han-Na (KGE). Jeong Han-Na (AU Jeong Tae-Eul), CEO of MindBridge, hires architect Lee Ro-Woon (AU Lee Gon) and his firm, AndZ, to design her new office building. She's scared that in the process of building MindBridge, he might also break all the walls around her heart.</a>
+            <a href="https://archiveofourown.org/works/35000314">Read Here</a>
+            <a href="https://twitter.com/misskaahaani/status/1456071195888164865?s=20">Fanfic Trailer</a>
+    </div></div>
+<!--- END DROP DOWN LIST --->
+ </div>
+
+
+<!--- BEGIN DROP DOWN LIST --->
+
+    </div>
+</article>
+<article class="posts">
+<div class="tags">
+<h2 class="aa">tkem/mineun alternate universe short fics (status: complete)</h2>
+
+
+<!--- BEGIN DROP DOWN LIST --->
+
+    <div class="list"><span>Have You Met My Ex-Boyfriend?</span>
+        <div class="in">
+            <a href="https://twitter.com/misskaahaani/status/1309323459160428547">Short Tweetfic. AU Lee Min Ho (CEO) x AU Kim Go Eun (CEO). Themes: Snark, Established Relationship.</a>
+            <a href="https://twitter.com/misskaahaani/status/1309323459160428547">Read Here</a>
+    </div></div>
+<div class="list"><span>Coffee Makes the Heart Grow Fonder</span>
+        <div class="in">
+            <a href="https://twitter.com/misskaahaani/status/1310002989667622912">Tweetfic. AU Lee Min Ho (Architect) x AU Kim Go Eun (Professor). Themes: Coffee-Shop, Pining, Meet-Cute. </a>
+            <a href="https://twitter.com/misskaahaani/status/1310002989667622912">Read Here</a>
+    </div></div>
+    
+       <div class="list"><span>The Monster</span>
+        <div class="in">
+            <a href="https://twitter.com/misskaahaani/status/1310361085858512897">Tweetfic. AU Lee Min Ho (University Student) x AU Kim Go Eun (University Student). Themes: Banter, Rescue, Meet-Cute.</a>
+            <a href="https://twitter.com/misskaahaani/status/1310361085858512897">Read Here</a>
+    </div></div>
+    
+          <div class="list"><span>Appetence</span>
+        <div class="in">
+            <a href="https://twitter.com/misskaahaani/status/1312602328697114624">AU Lee Min Ho x AU Kim Go Eun. The captain of the South Korea National Football team, Lee Min Ho, suffers an injury and lands in the hands of Doctor Kim Go Eun. Themes: Bad First Impressions, Slow Burn, Forbidden Romance
+</a>
+        <a href="https://twitter.com/misskaahaani/status/1312602328697114624">Read as Tweetfic</a>
+        <a href="https://archiveofourown.org/works/27066772">Read on AO3</a>
+    </div></div>
+    
+       <div class="list"><span>The Student & The Tutor</span>
+        <div class="in">
+            <a href="https://twitter.com/misskaahaani/status/1323111739874004993">AU Lee Min Ho x AU Kim Go Eun. Min Ho has had a crush on Go Eun since he first heard her speak in Grade 9 but she doesn't seem to know he exists. When he starts Grade 12, he decides he has pined long enough and comes up with a plan to get her to notice him.</a>
+        <a href="https://twitter.com/misskaahaani/status/1323111739874004993">Read as Tweetfic</a>
+        <a href="https://archiveofourown.org/works/27662114">Read on AO3</a>
+        <a href="https://archiveofourown.org/works/27929221">Read Chinese Translation</a>
+                 
+                  </div></div>
+                    <div class="list"><span>Radio Romance</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/28207134">AU Lee Min Ho x AU Kim Go Eun. Radio Co-Hosts, LMH & KGE, are trying very hard to not break the “no relationships with colleagues” clause of their contract.</a>
+            <a href="https://archiveofourown.org/works/28207134">Read on AO3</a>
+                  </div></div>
+                  
+                  <div class="list"><span>His Words [Explicit]</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/28866513">AU Lee Gon x AU Jeong Tae-Eul. Ewan Lee x Norah Jeong. In another universe, Lee Gon is Ewan (Yoo An) Lee, a best selling author. And Jeong Tae-Eul is Norah Jeong, his publishing agent. The lines between professional and personal blur because these two are meant to be together across every universe.[Explicit Smut]</a>
+            <a href="https://archiveofourown.org/works/28866513">Read on AO3</a>
+                  </div></div>
+                  
+                      <div class="list"><span>The Tapering Phenomenon [Explicit]</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/33058765">AU Lee Gon x AU Jeong Tae-Eul. South Korean Swimming Jeong Ye-Ri wants the Captain of the South Korean Rowing Team - and it's not even her fault, it's just hormones.</a>
+        <a href="https://archiveofourown.org/works/33058765">Read on AO3</a>
+                  </div></div>
+    
+    <!--- END DROP DOWN LIST --->
+    
+<!--- BEGIN DROP DOWN LIST --->
+
+    </div>
+</article>
+<article class="posts">
+<div class="tags">
+<h2 class="aa">mineun (lee min ho x kim go eun) drabbles</h2>
+
+
+<!--- BEGIN DROP DOWN LIST --->
+
+    <div class="list"><span>All MinEun Drabbles</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/series/1869469">AO3 Series featuring all MinEun drabbles I have written.</a>
+            <a href="https://archiveofourown.org/series/1869469">Read Here</a>
+    </div></div>
+<div class="list"><span>All TweetFics</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/27495904/chapters/67233373">An AO3 Collection of all my MinEun Tweetfics. </a>
+            <a href="https://archiveofourown.org/works/27495904/chapters/67233373">Read Here</a>
+    </div></div>
+    
+       <div class="list"><span>Chanel vs Louis Vuitton</span>
+        <div class="in">
+        <a href="https://archiveofourown.org/works/25730245">My first ever MinEun fic, inspired by the August 5 2020 Instagram Posts from both.</a>
+    <a href="https://archiveofourown.org/works/25730245">Read Here</a>
+    </div></div>
+    
+          <div class="list"><span>Home</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25754320">He tries to pinpoint when it first started for him but he’s at a loss. Was is the first time he saw her work and was blown away? Or was it when he first met her and found that she was so down to earth? Or was it the first time she laughed at something he said? Or was it when she smiled widely with her cute little nose twitching?</a>
+    <a href="https://archiveofourown.org/works/25754320">Read on AO3</a>
+    </div></div>
+    
+       <div class="list"><span>You Ready?</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25963390">Inspired by Lee Min Ho's Instagram Post on 08/16/2.Kim Go Eun makes a decision.</a>
+        <a href="https://archiveofourown.org/works/25963390">Read on AO3</a>
+       </div></div>
+    
+    <div class="list"><span>Mine</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/26293225">Kim Go Eun's nephew, Kim Lee-Re, meets Lee Min Ho.</a>
+        <a href="https://archiveofourown.org/works/26293225">Read on AO3</a>
+                  </div></div>
+                  
+                  <div class="list"><span>Tweetfic: Passing Trains</span>
+        <div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1303492870817579011">She misses him. A whole lot..</a>
+        <a href="https://twitter.com/misskaahaani/status/1303492870817579011">Read on Twitter</a>
+                  </div></div>
+                  
+<div class="list"><span>Tweetfic: Sorry?</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1303907302269952001">Maybe he is pouting because he's actually offended, or maybe he just likes being babied by her.</a>
+        <a href="https://twitter.com/misskaahaani/status/1303907302269952001">Read on Twitter</a>
+                  </div></div>
+                  
+<div class="list"><span>Tone It Down?</span>
+<div class="in">
+        <a href="https://archiveofourown.org/works/26453407g">Sometimes they get too loud, and then they get told to be quiet.</a>
+        <a href="https://archiveofourown.org/works/26453407g">Read on AO3</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: To Neigh That - Benjamin Reporting</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1306382599498149893">Benjamin, the horse, shares his thoughts about the hu-mans he loves.</a>
+        <a href="https://twitter.com/misskaahaani/status/1306382599498149893">Read on Twitter</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: Of Hoodies & Cardigans</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1306531664944922626">Domestic fluff and the fluffy pink cardigan - you all know which one.</a>
+        <a href="https://twitter.com/misskaahaani/status/1306531664944922626">Read on Twitter</a>
+                  </div></div>
+
+
+<div class="list"><span>Tweetfic: Chicken & Beer</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1308079791783006210">Someone suddenly likes beer and copying poses.</a>
+        <a href="https://twitter.com/misskaahaani/status/1308079791783006210">Read on Twitter</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: Lights</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1313076995421614084">Morning surprises and fluff.</a>
+        <a href="https://twitter.com/misskaahaani/status/1313076995421614084">Read on Twitter</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: Blurry Pictures and Dark Circles</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1315791050024288256">They share friends, and three out of four of them post a similar picture - why?</a>
+        <a href="https://twitter.com/misskaahaani/status/1315791050024288256">Read on Twitter</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: Stay</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1320516899080462338">Domestic Fluff</a>
+        <a href="https://twitter.com/misskaahaani/status/1320516899080462338">Read on Twitter</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: Get Togethers</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1325386968184786946?s=20">TKEM Reunion Drabble</a>
+        <a href="https://twitter.com/misskaahaani/status/1325386968184786946?s=20">Read on Twitter</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: Choco Tells All</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1329952673060143105?s=20">Choco comments on the new lady friend.</a>
+        <a href="https://twitter.com/misskaahaani/status/1329952673060143105?s=20">Read on Twitter</a>
+                  </div></div>
+
+<div class="list"><span>Tweetfic: And Next. And Next.</span>
+<div class="in">
+        <a href="https://twitter.com/misskaahaani/status/1344817744659755008?s=20">SBS Awards night.</a>
+        <a href="https://twitter.com/misskaahaani/status/1344817744659755008?s=20">Read on Twitter</a>
+                  </div></div>
+    <!--- END DROP DOWN LIST --->
+    
+    
+      </div></div>
+      
+</div>
+</article>
+<article class="posts">
+<div class="tags">
+<h2 class="aa">a series of wicked events: asowe - smut themes</h2>
+
+
+<!--- BEGIN DROP DOWN LIST --->
+
+    <div class="list"><span>Chapter 1: Bed Sharing & Jealousy</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/62499559">themes: jealousy (gon), possessiveness, teasing, rough, location - jte's room</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/62499559">Read Here</a>
+    </div></div>
+    
+<div class="list"><span>Chapter 2: Pinned</span>
+<div class="in">
+    <a href="https://archiveofourown.org/works/25737796/chapters/62754463">themes: sparring, boxing, bets & wagers, rough, dominant (tae-eul), location - boxing ring</a>
+    <a href="https://archiveofourown.org/works/25737796/chapters/62754463">Read Here</a>
+    </div></div>
+
+     <div class="list"><span>Chapter 3: Studying</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/62953948">themes: fulfilling fantasies, teasing, manual stimulation, oral, orgasm denial, location: gon's study</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/62953948">Read Here</a>
+    </div></div>
+    
+ <div class="list"><span>Chapter 4: The Office Desk</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/63312673">themes: jealousy (jte), glasses (lg), blowjob, sex on a desk, from behind, location: gon's office</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/63312673">Read Here</a>
+    </div></div>
+
+ <div class="list"><span>Chapter 5: The Honeymoon - Part 1</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/63896623">themes: slow, romantic, body worship, location: bedroom</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/63896623">Read Here</a>
+    </div></div>
+    
+ <div class="list"><span>Chapter 6: The Honeymoon - Part 2</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/64190065">themes: oral, orgasm count, multiple orgasms, rough, romantic, seduction, fantasies, location: bedroom, kitchen counter, mattress edge</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/64190065">Read Here</a>
+    </div></div>
+
+ <div class="list"><span>Chapter 7: The Honeymoon - Part 3</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/64636753">themes: massages, begging, manual and oral stimulation, blowjob, seduction, teasing, rough, choking, location: bedroom, swimming pool</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/64636753">Read Here</a>
+    </div></div>
+    
+<div class="list"><span>Chapter 8: The Honeymoon - Part 4</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/65190763">themes: semi-public, fingering, rough sex, location: restaurant, against a wall</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/65190763">Read Here</a>
+    </div></div>
+
+<div class="list"><span>Chapter 9: The Dress</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/66369395">themes: teasing, against a wall, oral, rough, quickie, location: terrace, courtyard, outdoors</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/66369395">Read Here</a>
+    </div></div>
+
+<div class="list"><span>Chapter 10: Shower</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/66744445">themes: sexual thoughts (tae-eul), longing, admiration, blowjob, rough, multiple orgasms, location: shower</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/66744445">Read Here</a>
+    </div></div>
+
+<div class="list"><span>Chapter 11: Leonardo DiCaprio</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/67551340">themes: jealousy (gon), sexual fantasies, dirty talk, fingering, semi-public location: car</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/67551340">Read Here</a>
+    </div></div>
+
+<div class="list"><span>Chapter 12: Tease</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/68337337">themes: exploration, teasing, risk of being caught, fingering, oral, begging, rough, orgasm denial, location: office</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/68337337">Read Here</a>
+    </div></div>
+
+<div class="list"><span>Chapter 13: Tae-Eul's Revenge</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/70262781">themes: lingerie, handcuffs, teasing, risk of being caught, handjob, blowjob, oral, spanking, rough, location: office</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/70262781">Read Here</a>
+    </div></div>
+
+<div class="list"><span>Chapter 14: Surprises</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/72751659">themes: handcuffs, bondage, begging, body worship, extended foreplay, fingering, oral, multiple orgasms,rough sex, fantasies, jersey fantasy, location: bedroom</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/72751659">Read Here</a>
+    </div></div>
+
+<div class="list"><span>Chapter 15: Undressing The Queen</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/76610477">themes: fantasies, extended foreplay, sexual thoughts, romantic, flashbacks, fingering, oral, multiple positions location: closet</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/76610477">Read Here</a>
+    </div></div>
+    <div class="list"><span>Chapter 16: Movie Night</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/85025860">themes:foreplay, romantic, outdoor sex, fingering, oral, facesitting, riding, location: palace courtyard</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/76610477">Read Here</a>
+    </div></div>
+     <div class="list"><span>Chapter 17: The Things The Queen Can't Resist: Part 1</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/86199214">themes: rowing, sexual thoughts, desire, fingering, oral, hard sex, rough, location: locker room</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/86199214">Read Here</a>
+    </div></div>
+       <div class="list"><span>Chapter 18: The Things The Queen Can't Resist: Part 2</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/91869016">themes: sexual thoughts, desire, teasing, oral, pregnancy sex, rough, location: horse stables</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/91869016">Read Here</a>
+    </div></div>
+           <div class="list"><span>Chapter 19: Memories</span>
+        <div class="in">
+            <a href="https://archiveofourown.org/works/25737796/chapters/96033325">themes: fluff, romantic, teasing, bickering, oral, slow sex, pregnancy sex, location: bedroom</a>
+            <a href="https://archiveofourown.org/works/25737796/chapters/96033325">Read Here</a>
+    </div></div>
+    <!--- END DROP DOWN LIST --->
+</div>
+
+
+ </div></div>
+     
+
+<!------ end tags section --------->
+
+
+<!------ end content --------->
+</section>
+
+
+
+
+
+<!------ LEAVE CREDIT IN TACT ------------>
+<a id="button"></a>
+<div class="taezs"><a href="https://taezs.tumblr.com"><span class="lnr lnr-paperclip"></span></a></div>
+<!------ LEAVE CREDIT IN TACT ------------>
+
+
+
+<!---- scripts ---->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script src="https://static.tumblr.com/uopakca/GVcnvdwbq/jquery.style-my-tooltips.js"></script>
+ <script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:0,
+tip_fade_speed:700,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+<script>
+var btn = $('#button');
+$(window).scroll(function() {
+if ($(window).scrollTop() > 300) {
+btn.addClass('show');
+} else {
+btn.removeClass('show');
+}
+});
+btn.on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+</body></html>
